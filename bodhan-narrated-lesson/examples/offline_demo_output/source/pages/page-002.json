@@ -1,0 +1,72 @@
+{
+  "page": 2,
+  "ocr_attempts": 1,
+  "quality": {
+    "blur": 1510.8761607142858,
+    "contrast": 16.515726349736333,
+    "skew_deg": 0.0,
+    "width": 400,
+    "height": 560,
+    "deskewed": false,
+    "doubtful_blocks": 0,
+    "layout_decision": {
+      "method": "ocr_order",
+      "llm_calls": 0
+    }
+  },
+  "raw_ocr": "180 degrees.\n\n| Angle | Value |\n|---|---|\n| A | 30 |\n| B | 60 |\n\n$$\\angle ABC = 90^\\circ$$\n\nwww.example-site.com free study material",
+  "blocks": [
+    {
+      "id": "p02-b000",
+      "page": 2,
+      "type": "paragraph",
+      "text": "180 degrees.",
+      "bbox": null,
+      "confidence": null,
+      "flags": [],
+      "order": 0,
+      "text_sha": "8d49119ee52bf1b0",
+      "meta": {}
+    },
+    {
+      "id": "p02-b001",
+      "page": 2,
+      "type": "table",
+      "text": "| Angle | Value |\n|---|---|\n| A | 30 |\n| B | 60 |",
+      "bbox": null,
+      "confidence": null,
+      "flags": [],
+      "order": 1,
+      "text_sha": "f7ab46ca97f29c23",
+      "meta": {}
+    },
+    {
+      "id": "p02-b002",
+      "page": 2,
+      "type": "equation",
+      "text": "$$\\angle ABC = 90^\\circ$$",
+      "bbox": null,
+      "confidence": null,
+      "flags": [],
+      "order": 2,
+      "text_sha": "0ca220f3be09ab8a",
+      "meta": {}
+    },
+    {
+      "id": "p02-b003",
+      "page": 2,
+      "type": "footer",
+      "text": "www.example-site.com free study material",
+      "bbox": null,
+      "confidence": null,
+      "flags": [
+        "running_header"
+      ],
+      "order": 3,
+      "text_sha": "c1eb5f8254ef05d2",
+      "meta": {
+        "removed_reason": "repeated_edge_text"
+      }
+    }
+  ]
+}

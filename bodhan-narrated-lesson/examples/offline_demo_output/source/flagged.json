@@ -1,0 +1,23 @@
+{
+  "flagged_blocks": [],
+  "removed_chrome": [
+    {
+      "id": "p01-b003",
+      "page": 1,
+      "text": "www.example-site.com free study material",
+      "reason": "repeated_edge_text"
+    },
+    {
+      "id": "p02-b003",
+      "page": 2,
+      "text": "www.example-site.com free study material",
+      "reason": "repeated_edge_text"
+    },
+    {
+      "id": "p03-b003",
+      "page": 3,
+      "text": "www.example-site.com free study material",
+      "reason": "repeated_edge_text"
+    }
+  ]
+}

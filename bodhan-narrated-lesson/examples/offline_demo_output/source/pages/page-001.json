@@ -1,0 +1,74 @@
+{
+  "page": 1,
+  "ocr_attempts": 1,
+  "quality": {
+    "blur": 1665.003392857143,
+    "contrast": 17.130082161195563,
+    "skew_deg": 0.0,
+    "width": 400,
+    "height": 560,
+    "deskewed": false,
+    "doubtful_blocks": 0,
+    "layout_decision": {
+      "method": "ocr_order",
+      "llm_calls": 0
+    }
+  },
+  "raw_ocr": "# 6.1 Lines and Angles\n\nParallel lines never meet in a plane.\n\nThe sum of the angles in a triangle is\n\nwww.example-site.com free study material",
+  "blocks": [
+    {
+      "id": "p01-b000",
+      "page": 1,
+      "type": "heading",
+      "text": "6.1 Lines and Angles",
+      "bbox": null,
+      "confidence": null,
+      "flags": [],
+      "order": 0,
+      "text_sha": "2c049979c9b9aadb",
+      "meta": {
+        "level": 1
+      }
+    },
+    {
+      "id": "p01-b001",
+      "page": 1,
+      "type": "paragraph",
+      "text": "Parallel lines never meet in a plane.",
+      "bbox": null,
+      "confidence": null,
+      "flags": [],
+      "order": 1,
+      "text_sha": "5435ddc583d72866",
+      "meta": {}
+    },
+    {
+      "id": "p01-b002",
+      "page": 1,
+      "type": "paragraph",
+      "text": "The sum of the angles in a triangle is",
+      "bbox": null,
+      "confidence": null,
+      "flags": [],
+      "order": 2,
+      "text_sha": "483a5e89a2b71cc6",
+      "meta": {}
+    },
+    {
+      "id": "p01-b003",
+      "page": 1,
+      "type": "footer",
+      "text": "www.example-site.com free study material",
+      "bbox": null,
+      "confidence": null,
+      "flags": [
+        "running_header"
+      ],
+      "order": 3,
+      "text_sha": "c1eb5f8254ef05d2",
+      "meta": {
+        "removed_reason": "repeated_edge_text"
+      }
+    }
+  ]
+}

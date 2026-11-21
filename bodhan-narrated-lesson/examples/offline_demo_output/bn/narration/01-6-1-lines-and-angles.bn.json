@@ -1,0 +1,128 @@
+{
+  "ai_generated": true,
+  "lang": "bn",
+  "section": "6.1 Lines and Angles",
+  "items": [
+    {
+      "kind": "heading",
+      "block_ids": [
+        "p01-b000"
+      ],
+      "notes": [],
+      "text": "अनुवाद ৬.১ Lines and Angles এটি বাংলা লিপিতে লেখা একটি পরীক্ষামূলক বাক্য"
+    },
+    {
+      "kind": "prose",
+      "block_ids": [
+        "p01-b001"
+      ],
+      "notes": [],
+      "text": "अनुवाद Parallel lines never meet in a plane. এটি বাংলা লিপিতে লেখা একটি পরীক্ষামূলক বাক্য"
+    },
+    {
+      "kind": "prose",
+      "block_ids": [
+        "p01-b002"
+      ],
+      "notes": [],
+      "text": "अनुवाद The sum of the angles in a triangle is ১৮০ degrees. এটি বাংলা লিপিতে লেখা একটি পরীক্ষামূলক বাক্য"
+    },
+    {
+      "kind": "table",
+      "block_ids": [
+        "p02-b001"
+      ],
+      "notes": [
+        "deterministic"
+      ],
+      "text": "अनुवाद Table with ২ rows and ২ columns. Columns: Angle, Value. Row ১: Angle is A; Value is ৩০. Row ২: Angle is B; Value is ৬০. এটি বাংলা লিপিতে লেখা একটি পরীক্ষামূলক বাক্য"
+    },
+    {
+      "kind": "equation",
+      "block_ids": [
+        "p02-b002"
+      ],
+      "notes": [],
+      "text": "अनुवाद Equation: angle A B C equals ৯০ degrees. এটি বাংলা লিপিতে লেখা একটি পরীক্ষামূলক বাক্য"
+    }
+  ],
+  "chunks": [
+    {
+      "text": "अनुवाद ৬.১ Lines and Angles এটি বাংলা লিপিতে লেখা একটি পরীক্ষামূলক বাক্য",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "अनुवाद Parallel lines never meet in a plane.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "এটি বাংলা লিপিতে লেখা একটি পরীক্ষামূলক বাক্য",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "अनुवाद The sum of the angles in a triangle is ১৮০ degrees.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "এটি বাংলা লিপিতে লেখা একটি পরীক্ষামূলক বাক্য",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "अनुवाद Table with ২ rows and ২ columns. Columns: Angle, Value.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "Row ১: Angle is A; Value is ৩০.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "Row ২: Angle is B; Value is ৬০.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "এটি বাংলা লিপিতে লেখা একটি পরীক্ষামূলক বাক্য",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "अनुवाद Equation: angle A B C equals ৯০ degrees.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "এটি বাংলা লিপিতে লেখা একটি পরীক্ষামূলক বাক্য",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    }
+  ]
+}

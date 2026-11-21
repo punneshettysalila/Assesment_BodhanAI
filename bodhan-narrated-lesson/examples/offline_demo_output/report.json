@@ -1,0 +1,265 @@
+{
+  "input": {
+    "path": "examples/offline_demo_output/synthetic_scans",
+    "langs": [
+      "hi",
+      "ta",
+      "bn"
+    ]
+  },
+  "pages": {},
+  "source": {
+    "language": "en",
+    "pages": 3,
+    "blocks": 8,
+    "sections": 2,
+    "flagged_blocks": 0,
+    "removed_chrome": 3,
+    "failed_pages": []
+  },
+  "languages": {
+    "hi": {
+      "status": "ok",
+      "skipped_blocks": [],
+      "translation_issues": [],
+      "sections": [
+        {
+          "index": 1,
+          "title": "6.1 Lines and Angles",
+          "slug": "6-1-lines-and-angles",
+          "chunks": 11,
+          "failed_chunks": 0,
+          "degraded_chunks": 0,
+          "retried_chunks": 0,
+          "unverified_chunks": 0,
+          "mean_cer": 0.0,
+          "skipped_blocks": [],
+          "seconds": 31.05,
+          "lufs": -16.4,
+          "file": "hi/audio/01-6-1-lines-and-angles.hi.mp3"
+        },
+        {
+          "index": 2,
+          "title": "6.2 Summary",
+          "slug": "6-2-summary",
+          "chunks": 5,
+          "failed_chunks": 0,
+          "degraded_chunks": 0,
+          "retried_chunks": 0,
+          "unverified_chunks": 0,
+          "mean_cer": 0.0,
+          "skipped_blocks": [],
+          "seconds": 17.4,
+          "lufs": -16.42,
+          "file": "hi/audio/02-6-2-summary.hi.mp3"
+        }
+      ],
+      "glossary": {
+        "hits": 0,
+        "misses": 0,
+        "consistency": null,
+        "miss_examples": [],
+        "terms": 0,
+        "lock_fallbacks": 0,
+        "code_mixed": false
+      },
+      "structure_ok": true,
+      "full_lufs": -16.45,
+      "chapters": 2,
+      "targets": {
+        "structure_survival": true,
+        "numbers_latex_issues": 0,
+        "section_mean_cer": 0.0,
+        "worst_section_cer": 0.0,
+        "loudness_lufs_range": [
+          -16.42,
+          -16.4
+        ],
+        "loudness_ok": true
+      }
+    },
+    "ta": {
+      "status": "ok",
+      "skipped_blocks": [],
+      "translation_issues": [],
+      "sections": [
+        {
+          "index": 1,
+          "title": "6.1 Lines and Angles",
+          "slug": "6-1-lines-and-angles",
+          "chunks": 11,
+          "failed_chunks": 0,
+          "degraded_chunks": 0,
+          "retried_chunks": 0,
+          "unverified_chunks": 0,
+          "mean_cer": 0.0,
+          "skipped_blocks": [],
+          "seconds": 31.05,
+          "lufs": -16.4,
+          "file": "ta/audio/01-6-1-lines-and-angles.ta.mp3"
+        },
+        {
+          "index": 2,
+          "title": "6.2 Summary",
+          "slug": "6-2-summary",
+          "chunks": 5,
+          "failed_chunks": 0,
+          "degraded_chunks": 0,
+          "retried_chunks": 0,
+          "unverified_chunks": 0,
+          "mean_cer": 0.0,
+          "skipped_blocks": [],
+          "seconds": 17.4,
+          "lufs": -16.42,
+          "file": "ta/audio/02-6-2-summary.ta.mp3"
+        }
+      ],
+      "glossary": {
+        "hits": 0,
+        "misses": 0,
+        "consistency": null,
+        "miss_examples": [],
+        "terms": 0,
+        "lock_fallbacks": 0,
+        "code_mixed": false
+      },
+      "structure_ok": true,
+      "full_lufs": -16.45,
+      "chapters": 2,
+      "targets": {
+        "structure_survival": true,
+        "numbers_latex_issues": 0,
+        "section_mean_cer": 0.0,
+        "worst_section_cer": 0.0,
+        "loudness_lufs_range": [
+          -16.42,
+          -16.4
+        ],
+        "loudness_ok": true
+      }
+    },
+    "bn": {
+      "status": "ok",
+      "skipped_blocks": [],
+      "translation_issues": [],
+      "sections": [
+        {
+          "index": 1,
+          "title": "6.1 Lines and Angles",
+          "slug": "6-1-lines-and-angles",
+          "chunks": 11,
+          "failed_chunks": 0,
+          "degraded_chunks": 0,
+          "retried_chunks": 0,
+          "unverified_chunks": 0,
+          "mean_cer": 0.0,
+          "skipped_blocks": [],
+          "seconds": 29.05,
+          "lufs": -16.43,
+          "file": "bn/audio/01-6-1-lines-and-angles.bn.mp3"
+        },
+        {
+          "index": 2,
+          "title": "6.2 Summary",
+          "slug": "6-2-summary",
+          "chunks": 5,
+          "failed_chunks": 0,
+          "degraded_chunks": 0,
+          "retried_chunks": 0,
+          "unverified_chunks": 0,
+          "mean_cer": 0.0,
+          "skipped_blocks": [],
+          "seconds": 15.8,
+          "lufs": -16.44,
+          "file": "bn/audio/02-6-2-summary.bn.mp3"
+        }
+      ],
+      "glossary": {
+        "hits": 0,
+        "misses": 0,
+        "consistency": null,
+        "miss_examples": [],
+        "terms": 0,
+        "lock_fallbacks": 0,
+        "code_mixed": false
+      },
+      "structure_ok": true,
+      "full_lufs": -16.48,
+      "chapters": 2,
+      "targets": {
+        "structure_survival": true,
+        "numbers_latex_issues": 0,
+        "section_mean_cer": 0.0,
+        "worst_section_cer": 0.0,
+        "loudness_lufs_range": [
+          -16.44,
+          -16.43
+        ],
+        "loudness_ok": true
+      }
+    }
+  },
+  "usage": {
+    "ocr": {
+      "calls": 3,
+      "retries": 0,
+      "failures": 0,
+      "latency_s": 0.0,
+      "units": 0.0,
+      "cost_inr": 0.6
+    },
+    "translate": {
+      "calls": 39,
+      "retries": 0,
+      "failures": 0,
+      "latency_s": 0.0,
+      "units": 0.0,
+      "cost_inr": 0.78
+    },
+    "speak": {
+      "calls": 48,
+      "retries": 0,
+      "failures": 0,
+      "latency_s": 0.0,
+      "units": 0.0,
+      "cost_inr": 14.4
+    },
+    "transcribe": {
+      "calls": 48,
+      "retries": 0,
+      "failures": 0,
+      "latency_s": 0.0,
+      "units": 0.0,
+      "cost_inr": 0.96
+    },
+    "total_cost_inr": 16.74
+  },
+  "warnings": [
+    {
+      "msg": "OFFLINE DEMO: models are simulated, outputs are not real Bodhan results"
+    }
+  ],
+  "timings_s": {
+    "ingest": 0.0,
+    "ocr": 0.35,
+    "layout": 0.002,
+    "pivot": 0.0,
+    "hi:translate": 0.009,
+    "ta:translate": 0.012,
+    "bn:translate": 0.013,
+    "bn:narrate": 9.945,
+    "ta:narrate": 10.526,
+    "hi:narrate": 10.53
+  },
+  "cache": {
+    "hits": 0,
+    "misses": 75
+  },
+  "total_runtime_s": 10.89,
+  "quality_targets": {
+    "structure_survival": "heading/table/equation skeleton identical to source",
+    "numbers_latex_issues": "0 changed numbers or LaTeX in translation",
+    "section_mean_cer": "<= 0.12 mean CER per section",
+    "loudness_lufs": "-16 LUFS +/- 1 per section and full lesson"
+  }
+}

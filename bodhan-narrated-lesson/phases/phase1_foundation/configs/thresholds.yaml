@@ -1,0 +1,21 @@
+# All tunables in one place. Every value has a code default; this file overrides it.
+ocr:
+  min_confidence: 0.80        # block confidence below this -> flag low_confidence
+  max_garbage_ratio: 0.15     # share of odd symbols above this -> flag garbled
+  retry_fraction: 0.20        # re-OCR the page at higher scale when >= 20% of blocks are doubtful
+  recrop_scale: 2.0
+  max_recrops: 1
+layout:
+  header_footer_page_fraction: 0.40   # edge text repeated on >= 40% of pages is chrome
+  band_height: 0.08                   # top/bottom 8% of the page when bounding boxes exist
+speech:
+  max_cer: 0.12               # per-chunk character error rate accepted without retry
+  max_retries: 3              # ladder: as-is -> simplified punctuation -> split in halves
+  ignore_digits: true         # ASR may write numbers as words or digits
+  repeat_ratio: 0.25          # insertions / reference chars above this -> repeat_suspected
+  omit_ratio: 0.25            # deletions / reference chars above this -> omission_suspected
+  min_sec_per_char: 0.02
+  max_sec_per_char: 0.40
+  max_audio_seconds: 28       # Indic-Transcribe accepts short clips only
+  loudness_lufs: -16.0
+  loudness_tolerance: 1.0

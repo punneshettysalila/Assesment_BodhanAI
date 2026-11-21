@@ -1,0 +1,16 @@
+# Bodhan hosted API routes and model identifiers documented at
+# https://console.bodhan.ai/api-docs/.
+ocr:
+  path: /v1/chat/completions
+  model: indic-ocr
+translate:
+  path: /translate
+  model: indic-translate
+speak:
+  path: /v1/audio/speech
+  model: indic-speak
+transcribe:
+  path: /v1/audio/transcriptions
+  model: indic-transcribe
+  max_audio_seconds: 30      # hosted limit; verification works on chunks below this
+

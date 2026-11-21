@@ -1,0 +1,128 @@
+{
+  "ai_generated": true,
+  "lang": "hi",
+  "section": "6.1 Lines and Angles",
+  "items": [
+    {
+      "kind": "heading",
+      "block_ids": [
+        "p01-b000"
+      ],
+      "notes": [],
+      "text": "अनुवाद ६.१ Lines and Angles यह एक परीक्षण वाक्य है जो हिंदी लिपि में लिखा गया है"
+    },
+    {
+      "kind": "prose",
+      "block_ids": [
+        "p01-b001"
+      ],
+      "notes": [],
+      "text": "अनुवाद Parallel lines never meet in a plane. यह एक परीक्षण वाक्य है जो हिंदी लिपि में लिखा गया है"
+    },
+    {
+      "kind": "prose",
+      "block_ids": [
+        "p01-b002"
+      ],
+      "notes": [],
+      "text": "अनुवाद The sum of the angles in a triangle is १८० degrees. यह एक परीक्षण वाक्य है जो हिंदी लिपि में लिखा गया है"
+    },
+    {
+      "kind": "table",
+      "block_ids": [
+        "p02-b001"
+      ],
+      "notes": [
+        "deterministic"
+      ],
+      "text": "अनुवाद Table with २ rows and २ columns. Columns: Angle, Value. Row १: Angle is A; Value is ३०. Row २: Angle is B; Value is ६०. यह एक परीक्षण वाक्य है जो हिंदी लिपि में लिखा गया है"
+    },
+    {
+      "kind": "equation",
+      "block_ids": [
+        "p02-b002"
+      ],
+      "notes": [],
+      "text": "अनुवाद Equation: angle A B C equals ९० degrees. यह एक परीक्षण वाक्य है जो हिंदी लिपि में लिखा गया है"
+    }
+  ],
+  "chunks": [
+    {
+      "text": "अनुवाद ६.१ Lines and Angles यह एक परीक्षण वाक्य है जो हिंदी लिपि में लिखा गया है",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "अनुवाद Parallel lines never meet in a plane.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "यह एक परीक्षण वाक्य है जो हिंदी लिपि में लिखा गया है",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "अनुवाद The sum of the angles in a triangle is १८० degrees.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "यह एक परीक्षण वाक्य है जो हिंदी लिपि में लिखा गया है",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "अनुवाद Table with २ rows and २ columns. Columns: Angle, Value.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "Row १: Angle is A; Value is ३०.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "Row २: Angle is B; Value is ६०.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "यह एक परीक्षण वाक्य है जो हिंदी लिपि में लिखा गया है",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "अनुवाद Equation: angle A B C equals ९० degrees.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "यह एक परीक्षण वाक्य है जो हिंदी लिपि में लिखा गया है",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    }
+  ]
+}

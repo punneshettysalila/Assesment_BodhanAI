@@ -1,0 +1,128 @@
+{
+  "ai_generated": true,
+  "lang": "ta",
+  "section": "6.1 Lines and Angles",
+  "items": [
+    {
+      "kind": "heading",
+      "block_ids": [
+        "p01-b000"
+      ],
+      "notes": [],
+      "text": "अनुवाद ௬.௧ Lines and Angles இது ஒரு சோதனை வாக்கியம் தமிழ் எழுத்தில் எழுதப்பட்டது"
+    },
+    {
+      "kind": "prose",
+      "block_ids": [
+        "p01-b001"
+      ],
+      "notes": [],
+      "text": "अनुवाद Parallel lines never meet in a plane. இது ஒரு சோதனை வாக்கியம் தமிழ் எழுத்தில் எழுதப்பட்டது"
+    },
+    {
+      "kind": "prose",
+      "block_ids": [
+        "p01-b002"
+      ],
+      "notes": [],
+      "text": "अनुवाद The sum of the angles in a triangle is ௧௮௦ degrees. இது ஒரு சோதனை வாக்கியம் தமிழ் எழுத்தில் எழுதப்பட்டது"
+    },
+    {
+      "kind": "table",
+      "block_ids": [
+        "p02-b001"
+      ],
+      "notes": [
+        "deterministic"
+      ],
+      "text": "अनुवाद Table with ௨ rows and ௨ columns. Columns: Angle, Value. Row ௧: Angle is A; Value is ௩௦. Row ௨: Angle is B; Value is ௬௦. இது ஒரு சோதனை வாக்கியம் தமிழ் எழுத்தில் எழுதப்பட்டது"
+    },
+    {
+      "kind": "equation",
+      "block_ids": [
+        "p02-b002"
+      ],
+      "notes": [],
+      "text": "अनुवाद Equation: angle A B C equals ௯௦ degrees. இது ஒரு சோதனை வாக்கியம் தமிழ் எழுத்தில் எழுதப்பட்டது"
+    }
+  ],
+  "chunks": [
+    {
+      "text": "अनुवाद ௬.௧ Lines and Angles இது ஒரு சோதனை வாக்கியம் தமிழ் எழுத்தில் எழுதப்பட்டது",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "अनुवाद Parallel lines never meet in a plane.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "இது ஒரு சோதனை வாக்கியம் தமிழ் எழுத்தில் எழுதப்பட்டது",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "अनुवाद The sum of the angles in a triangle is ௧௮௦ degrees.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "இது ஒரு சோதனை வாக்கியம் தமிழ் எழுத்தில் எழுதப்பட்டது",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "अनुवाद Table with ௨ rows and ௨ columns. Columns: Angle, Value.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "Row ௧: Angle is A; Value is ௩௦.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "Row ௨: Angle is B; Value is ௬௦.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "இது ஒரு சோதனை வாக்கியம் தமிழ் எழுத்தில் எழுதப்பட்டது",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "अनुवाद Equation: angle A B C equals ௯௦ degrees.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "இது ஒரு சோதனை வாக்கியம் தமிழ் எழுத்தில் எழுதப்பட்டது",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    }
+  ]
+}

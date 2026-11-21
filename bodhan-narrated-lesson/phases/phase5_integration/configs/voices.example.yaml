@@ -1,0 +1,5 @@
+# Optional voice overrides for Indic-Speak. Any documented voice may read any supported language.
+# Pass this file with --voices configs/voices.example.yaml.
+hi: Kavya
+ta: Anitha
+bn: Ishita

@@ -1,0 +1,68 @@
+{
+  "ai_generated": true,
+  "lang": "ta",
+  "section": "6.2 Summary",
+  "items": [
+    {
+      "kind": "heading",
+      "block_ids": [
+        "p03-b000"
+      ],
+      "notes": [],
+      "text": "अनुवाद ௬.௨ Summary இது ஒரு சோதனை வாக்கியம் தமிழ் எழுத்தில் எழுதப்பட்டது"
+    },
+    {
+      "kind": "prose",
+      "block_ids": [
+        "p03-b001"
+      ],
+      "notes": [],
+      "text": "अनुवाद Lines and angles are everywhere in daily life. இது ஒரு சோதனை வாக்கியம் தமிழ் எழுத்தில் எழுதப்பட்டது"
+    },
+    {
+      "kind": "list",
+      "block_ids": [
+        "p03-b002"
+      ],
+      "notes": [],
+      "text": "अनुवाद Parallel lines இது ஒரு சோதனை வாக்கியம் தமிழ் எழுத்தில் எழுதப்பட்டது. अनुवाद Transversals இது ஒரு சோதனை வாக்கியம் தமிழ் எழுத்தில் எழுதப்பட்டது."
+    }
+  ],
+  "chunks": [
+    {
+      "text": "अनुवाद ௬.௨ Summary இது ஒரு சோதனை வாக்கியம் தமிழ் எழுத்தில் எழுதப்பட்டது",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "अनुवाद Lines and angles are everywhere in daily life.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "இது ஒரு சோதனை வாக்கியம் தமிழ் எழுத்தில் எழுதப்பட்டது",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "अनुवाद Parallel lines இது ஒரு சோதனை வாக்கியம் தமிழ் எழுத்தில் எழுதப்பட்டது.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "अनुवाद Transversals இது ஒரு சோதனை வாக்கியம் தமிழ் எழுத்தில் எழுதப்பட்டது.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+<!doctype html><meta charset=utf-8><title>Narrated lesson report</title><style>body{font:15px/1.5 system-ui,sans-serif;margin:2rem auto;max-width:980px;color:#222;padding:0 1rem}
+h1{font-size:1.5rem}h2{font-size:1.1rem;margin-top:2rem;border-bottom:1px solid #ddd;padding-bottom:.3rem}
+table{border-collapse:collapse;width:100%;margin:.5rem 0}td,th{border:1px solid #ddd;padding:.35rem .6rem;text-align:left;font-size:.9rem}
+th{background:#f5f5f5}.ok{color:#0a7d33;font-weight:600}.partial{color:#b26a00;font-weight:600}.failed{color:#b00020;font-weight:600}
+.card{display:inline-block;border:1px solid #ddd;border-radius:8px;padding:.6rem 1rem;margin:.2rem .4rem .2rem 0}
+.card b{display:block;font-size:1.3rem}code{background:#f3f3f3;padding:0 .25rem;border-radius:3px}</style>
+<h1>Narrated lesson - run report</h1>
+<div class=card>Pages<b>3</b></div><div class=card>Blocks<b>8</b></div><div class=card>Sections<b>2</b></div><div class=card>Flagged blocks<b>0</b></div><div class=card>Chrome removed<b>3</b></div><div class=card>Total cost (INR)<b>16.74</b></div><div class=card>Runtime (s)<b>10.89</b></div>
+<h2>Languages</h2><table><tr><th>Lang<th>Status<th>Structure<th>Mean CER<th>Worst CER<th>Loudness (LUFS)<th>Skipped blocks<th>Glossary consistency</tr>
+<tr><td>hi<td class=ok>ok<td>OK<td>0.0<td>0.0<td>[-16.42, -16.4]<td>0<td>None</tr>
+<tr><td>ta<td class=ok>ok<td>OK<td>0.0<td>0.0<td>[-16.42, -16.4]<td>0<td>None</tr>
+<tr><td>bn<td class=ok>ok<td>OK<td>0.0<td>0.0<td>[-16.44, -16.43]<td>0<td>None</tr>
+</table>
+<h2>Sections - hi</h2><table><tr><th>#<th>Title<th>Chunks<th>Retried<th>Degraded<th>Failed<th>Mean CER<th>Seconds<th>LUFS</tr>
+<tr><td>1<td>6.1 Lines and Angles<td>11<td>0<td>0<td>0<td>0.0<td>31.05<td>-16.4</tr>
+<tr><td>2<td>6.2 Summary<td>5<td>0<td>0<td>0<td>0.0<td>17.4<td>-16.42</tr>
+</table>
+<h2>Sections - ta</h2><table><tr><th>#<th>Title<th>Chunks<th>Retried<th>Degraded<th>Failed<th>Mean CER<th>Seconds<th>LUFS</tr>
+<tr><td>1<td>6.1 Lines and Angles<td>11<td>0<td>0<td>0<td>0.0<td>31.05<td>-16.4</tr>
+<tr><td>2<td>6.2 Summary<td>5<td>0<td>0<td>0<td>0.0<td>17.4<td>-16.42</tr>
+</table>
+<h2>Sections - bn</h2><table><tr><th>#<th>Title<th>Chunks<th>Retried<th>Degraded<th>Failed<th>Mean CER<th>Seconds<th>LUFS</tr>
+<tr><td>1<td>6.1 Lines and Angles<td>11<td>0<td>0<td>0<td>0.0<td>29.05<td>-16.43</tr>
+<tr><td>2<td>6.2 Summary<td>5<td>0<td>0<td>0<td>0.0<td>15.8<td>-16.44</tr>
+</table>
+<h2>Model usage</h2><table><tr><th>Model<th>Calls<th>Retries<th>Failures<th>Latency (s)<th>Cost (INR)</tr>
+<tr><td>ocr<td>3<td>0<td>0<td>0.0<td>0.6</tr>
+<tr><td>translate<td>39<td>0<td>0<td>0.0<td>0.78</tr>
+<tr><td>speak<td>48<td>0<td>0<td>0.0<td>14.4</tr>
+<tr><td>transcribe<td>48<td>0<td>0<td>0.0<td>0.96</tr>
+</table><h2>Stage timings (s)</h2><table>
+<tr><td><code>ingest</code><td>0.0</tr>
+<tr><td><code>ocr</code><td>0.35</tr>
+<tr><td><code>layout</code><td>0.002</tr>
+<tr><td><code>pivot</code><td>0.0</tr>
+<tr><td><code>hi:translate</code><td>0.009</tr>
+<tr><td><code>ta:translate</code><td>0.012</tr>
+<tr><td><code>bn:translate</code><td>0.013</tr>
+<tr><td><code>bn:narrate</code><td>9.945</tr>
+<tr><td><code>ta:narrate</code><td>10.526</tr>
+<tr><td><code>hi:narrate</code><td>10.53</tr>
+</table>
+<h2>Warnings</h2><ul><li>{&quot;msg&quot;: &quot;OFFLINE DEMO: models are simulated, outputs are not real Bodhan results&quot;}</li></ul>

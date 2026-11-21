@@ -1,0 +1,68 @@
+{
+  "ai_generated": true,
+  "lang": "hi",
+  "section": "6.2 Summary",
+  "items": [
+    {
+      "kind": "heading",
+      "block_ids": [
+        "p03-b000"
+      ],
+      "notes": [],
+      "text": "अनुवाद ६.२ Summary यह एक परीक्षण वाक्य है जो हिंदी लिपि में लिखा गया है"
+    },
+    {
+      "kind": "prose",
+      "block_ids": [
+        "p03-b001"
+      ],
+      "notes": [],
+      "text": "अनुवाद Lines and angles are everywhere in daily life. यह एक परीक्षण वाक्य है जो हिंदी लिपि में लिखा गया है"
+    },
+    {
+      "kind": "list",
+      "block_ids": [
+        "p03-b002"
+      ],
+      "notes": [],
+      "text": "अनुवाद Parallel lines यह एक परीक्षण वाक्य है जो हिंदी लिपि में लिखा गया है. अनुवाद Transversals यह एक परीक्षण वाक्य है जो हिंदी लिपि में लिखा गया है."
+    }
+  ],
+  "chunks": [
+    {
+      "text": "अनुवाद ६.२ Summary यह एक परीक्षण वाक्य है जो हिंदी लिपि में लिखा गया है",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "अनुवाद Lines and angles are everywhere in daily life.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "यह एक परीक्षण वाक्य है जो हिंदी लिपि में लिखा गया है",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "अनुवाद Parallel lines यह एक परीक्षण वाक्य है जो हिंदी लिपि में लिखा गया है.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "अनुवाद Transversals यह एक परीक्षण वाक्य है जो हिंदी लिपि में लिखा गया है.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    }
+  ]
+}

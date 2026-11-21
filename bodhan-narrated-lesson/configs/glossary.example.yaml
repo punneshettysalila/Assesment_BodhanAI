@@ -1,0 +1,5 @@
+# Human overrides win over machine glossary. Use with --glossary configs/glossary.yaml
+parallel lines:
+  hi: समांतर रेखाएँ
+transversal:
+  hi: तिर्यक रेखा

@@ -1,0 +1,74 @@
+{
+  "page": 3,
+  "ocr_attempts": 1,
+  "quality": {
+    "blur": 1586.4983303571428,
+    "contrast": 16.598659111229328,
+    "skew_deg": 0.0,
+    "width": 400,
+    "height": 560,
+    "deskewed": false,
+    "doubtful_blocks": 0,
+    "layout_decision": {
+      "method": "ocr_order",
+      "llm_calls": 0
+    }
+  },
+  "raw_ocr": "## 6.2 Summary\n\nLines and angles are everywhere in daily life.\n\n- Parallel lines\n- Transversals\n\nwww.example-site.com free study material",
+  "blocks": [
+    {
+      "id": "p03-b000",
+      "page": 3,
+      "type": "heading",
+      "text": "6.2 Summary",
+      "bbox": null,
+      "confidence": null,
+      "flags": [],
+      "order": 0,
+      "text_sha": "b679548ecc8c17e7",
+      "meta": {
+        "level": 2
+      }
+    },
+    {
+      "id": "p03-b001",
+      "page": 3,
+      "type": "paragraph",
+      "text": "Lines and angles are everywhere in daily life.",
+      "bbox": null,
+      "confidence": null,
+      "flags": [],
+      "order": 1,
+      "text_sha": "9ddf81592d1d0ad3",
+      "meta": {}
+    },
+    {
+      "id": "p03-b002",
+      "page": 3,
+      "type": "list",
+      "text": "- Parallel lines\n- Transversals",
+      "bbox": null,
+      "confidence": null,
+      "flags": [],
+      "order": 2,
+      "text_sha": "881b659488cb24a2",
+      "meta": {}
+    },
+    {
+      "id": "p03-b003",
+      "page": 3,
+      "type": "footer",
+      "text": "www.example-site.com free study material",
+      "bbox": null,
+      "confidence": null,
+      "flags": [
+        "running_header"
+      ],
+      "order": 3,
+      "text_sha": "c1eb5f8254ef05d2",
+      "meta": {
+        "removed_reason": "repeated_edge_text"
+      }
+    }
+  ]
+}

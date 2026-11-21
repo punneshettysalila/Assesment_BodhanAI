@@ -1,0 +1,68 @@
+{
+  "ai_generated": true,
+  "lang": "bn",
+  "section": "6.2 Summary",
+  "items": [
+    {
+      "kind": "heading",
+      "block_ids": [
+        "p03-b000"
+      ],
+      "notes": [],
+      "text": "अनुवाद ৬.২ Summary এটি বাংলা লিপিতে লেখা একটি পরীক্ষামূলক বাক্য"
+    },
+    {
+      "kind": "prose",
+      "block_ids": [
+        "p03-b001"
+      ],
+      "notes": [],
+      "text": "अनुवाद Lines and angles are everywhere in daily life. এটি বাংলা লিপিতে লেখা একটি পরীক্ষামূলক বাক্য"
+    },
+    {
+      "kind": "list",
+      "block_ids": [
+        "p03-b002"
+      ],
+      "notes": [],
+      "text": "अनुवाद Parallel lines এটি বাংলা লিপিতে লেখা একটি পরীক্ষামূলক বাক্য. अनुवाद Transversals এটি বাংলা লিপিতে লেখা একটি পরীক্ষামূলক বাক্য."
+    }
+  ],
+  "chunks": [
+    {
+      "text": "अनुवाद ৬.২ Summary এটি বাংলা লিপিতে লেখা একটি পরীক্ষামূলক বাক্য",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "अनुवाद Lines and angles are everywhere in daily life.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "এটি বাংলা লিপিতে লেখা একটি পরীক্ষামূলক বাক্য",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "अनुवाद Parallel lines এটি বাংলা লিপিতে লেখা একটি পরীক্ষামূলক বাক্য.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    },
+    {
+      "text": "अनुवाद Transversals এটি বাংলা লিপিতে লেখা একটি পরীক্ষামূলক বাক্য.",
+      "cer": 0.0,
+      "attempts": 1,
+      "status": "ok",
+      "flags": []
+    }
+  ]
+}
