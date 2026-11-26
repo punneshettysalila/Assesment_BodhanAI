@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f6f7">
+    <meta name="description" content="Read, listen to, and inspect narrated lessons made with the Bodhan lesson pipeline.">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; media-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <title>Bodhan — narrated lessons</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to lesson</a>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Bodhan narrated lessons home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 36 36" fill="none">
+            <path d="M5 8.5c5.4-1.6 9.7-.8 13 2.1v19c-3.3-2.9-7.6-3.7-13-2.1v-19Z" fill="currentColor" opacity=".92"/>
+            <path d="M31 8.5c-5.4-1.6-9.7-.8-13 2.1v19c3.3-2.9 7.6-3.7 13-2.1v-19Z" fill="currentColor" opacity=".55"/>
+            <path d="M18 10.6v19" stroke="#fff" stroke-width="1.5"/>
+          </svg>
+        </span>
+        <span class="brand-copy"><strong>bodhan</strong><small>narrated lessons</small></span>
+      </a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <button class="nav-tab is-active" data-view-tab="read" type="button">Read</button>
+        <button class="nav-tab" data-view-tab="workflow" type="button">How it works</button>
+        <button class="nav-tab" data-view-tab="report" type="button">Run report</button>
+      </nav>
+      <div class="top-actions">
+        <span class="run-badge"><span class="status-dot"></span><span id="run-label">Loading lesson</span></span>
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Toggle theme">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16.5 12.6A7 7 0 0 1 7.4 3.5 7 7 0 1 0 16.5 12.6Z"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="notice" id="provenance-notice" role="note">
+      <span class="notice-icon" aria-hidden="true">i</span>
+      <p><strong>Sample outputs are simulated.</strong> Audio, translations, and metrics in the included lesson are for interface demonstration only—not real Bodhan model results.</p>
+      <button class="notice-close" id="dismiss-notice" type="button" aria-label="Dismiss sample notice">×</button>
+    </div>
+
+    <main id="main-content">
+      <section class="intro">
+        <div class="intro-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> FROM SCANNED PAGE TO SPOKEN LESSON</p>
+          <h1>Learning should sound<br>like it <em>belongs to you.</em></h1>
+          <p class="intro-lede">A calmer way to read a chapter, follow its structure, and listen in the language that feels right.</p>
+        </div>
+        <div class="intro-actions">
+          <button class="button button-dark" id="open-sample" type="button">
+            <span>Explore the sample</span><span aria-hidden="true">↗</span>
+          </button>
+          <button class="button button-light" id="import-run" type="button">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 13V3m0 0L6.5 6.5M10 3l3.5 3.5M4 12.5v3A1.5 1.5 0 0 0 5.5 17h9a1.5 1.5 0 0 0 1.5-1.5v-3"/></svg>
+            <span>Open your run</span>
+          </button>
+          <input id="run-folder" class="visually-hidden" type="file" webkitdirectory directory multiple aria-label="Choose a pipeline output folder">
+          <p class="local-note">Your files stay in this browser. No upload or model calls.</p>
+        </div>
+      </section>
+
+      <section class="stats-strip" aria-label="Current run overview">
+        <div class="stat-item"><span class="stat-icon stat-violet" aria-hidden="true">▤</span><span><strong id="stat-pages">—</strong><small>scanned pages</small></span></div>
+        <div class="stat-item"><span class="stat-icon stat-coral" aria-hidden="true">◉</span><span><strong id="stat-sections">—</strong><small>lesson sections</small></span></div>
+        <div class="stat-item"><span class="stat-icon stat-mint" aria-hidden="true">文</span><span><strong id="stat-languages">—</strong><small>available languages</small></span></div>
+        <div class="stat-item stat-source"><span class="stat-icon stat-gold" aria-hidden="true">✳</span><span><strong id="stat-source-language">—</strong><small>source language</small></span></div>
+        <div class="stats-caption">A chapter that<br><em>travels further.</em></div>
+      </section>
+
+      <section class="app-view" id="view-read" data-view-panel="read">
+        <aside class="study-rail" aria-label="Lesson controls">
+          <div class="rail-heading">
+            <div><p class="eyebrow">YOUR STUDY SPACE</p><h2>Lesson map</h2></div>
+            <span class="rail-count" id="section-count">—</span>
+          </div>
+          <label class="field-label" for="language-select">LISTEN &amp; READ IN</label>
+          <div class="select-wrap">
+            <select id="language-select" aria-label="Lesson language"></select>
+            <span aria-hidden="true">⌄</span>
+          </div>
+          <div class="mode-switch" role="group" aria-label="Choose lesson text">
+            <button type="button" class="mode-button is-active" data-mode="translation">Translation</button>
+            <button type="button" class="mode-button" data-mode="source">Source</button>
+          </div>
+          <div class="rail-divider"></div>
+          <div class="section-list-heading"><span class="field-label">CHAPTER SECTIONS</span><span class="section-progress" id="section-progress">0 / 0</span></div>
+          <label class="search-box">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.7" cy="8.7" r="5.6"/><path d="m13 13 4 4"/></svg>
+            <input id="section-search" type="search" placeholder="Find a section" autocomplete="off">
+            <kbd>/</kbd>
+          </label>
+          <nav class="section-list" id="section-list" aria-label="Chapter sections"></nav>
+          <div class="rail-bottom">
+            <div class="local-card">
+              <span class="local-card-icon" aria-hidden="true">↗</span>
+              <div><strong>Have a lesson run?</strong><p>Open its output folder to explore your own report and audio.</p></div>
+              <button type="button" id="import-run-rail" aria-label="Open your run">→</button>
+            </div>
+            <p class="privacy-note"><span aria-hidden="true">◉</span> Imported files are read locally and never sent to a server.</p>
+          </div>
+        </aside>
+
+        <div class="lesson-column">
+          <div class="lesson-context">
+            <div class="breadcrumbs"><span>MY LIBRARY</span><span aria-hidden="true">/</span><strong id="breadcrumb-title">Narrated lesson</strong></div>
+            <span class="sample-chip" id="provenance-chip">SIMULATED SAMPLE</span>
+          </div>
+          <div class="lesson-heading">
+            <div>
+              <p class="eyebrow" id="section-kicker">SECTION 01 · LESSON</p>
+              <h2 id="lesson-title">Loading your lesson…</h2>
+            </div>
+            <button class="icon-button bookmark-button" id="mark-complete" type="button" aria-pressed="false" aria-label="Mark this section complete" title="Mark section complete">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10.2 4 4 8-8"/></svg>
+            </button>
+          </div>
+          <p class="section-description" id="section-description">A thoughtful reading experience for every chapter.</p>
+
+          <section class="audio-card" aria-label="Lesson audio player">
+            <div class="audio-art" aria-hidden="true">
+              <span class="audio-art-orbit"></span><span class="audio-art-center">♪</span>
+              <span class="audio-wave audio-wave-one"></span><span class="audio-wave audio-wave-two"></span>
+            </div>
+            <div class="audio-main">
+              <div class="audio-meta"><div><span class="audio-kicker">NARRATED SECTION</span><h3 id="audio-title">Choose a section to begin</h3></div><span class="audio-duration" id="audio-duration">—:—</span></div>
+              <audio id="audio-element" preload="none"></audio>
+              <div class="audio-progress-row">
+                <span id="audio-current">0:00</span>
+                <input id="audio-seek" type="range" min="0" max="1000" value="0" aria-label="Seek audio">
+                <span id="audio-total">0:00</span>
+              </div>
+              <div class="audio-controls">
+                <button class="player-control" id="rewind-audio" type="button" aria-label="Back 10 seconds" title="Back 10 seconds">↶<small>10</small></button>
+                <button class="play-button" id="play-audio" type="button" aria-label="Play audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7V5Z"/></svg></button>
+                <button class="player-control" id="forward-audio" type="button" aria-label="Forward 10 seconds" title="Forward 10 seconds">↷<small>10</small></button>
+                <label class="speed-control"><span class="visually-hidden">Playback speed</span><select id="playback-speed" aria-label="Playback speed"><option value="1">1×</option><option value="1.25">1.25×</option><option value="1.5">1.5×</option><option value="0.75">0.75×</option></select></label>
+                <span class="audio-availability" id="audio-message">Audio is ready when you are.</span>
+              </div>
+            </div>
+          </section>
+          <button class="full-audio-link" id="toggle-full-lesson" type="button" aria-pressed="false">Play the full lesson <span aria-hidden="true">↗</span></button>
+          <p class="audio-disclaimer" id="audio-disclaimer">Sample audio is simulated for demonstration; it is not a real Bodhan voice result.</p>
+
+          <article class="lesson-paper">
+            <div class="paper-topline"><span><span class="paper-dot"></span> LESSON NOTES</span><span id="reading-language">—</span></div>
+            <div id="lesson-content" class="lesson-content" lang="en"></div>
+            <div class="paper-footer"><span id="block-count">Structured from the source chapter</span><span class="paper-rule"></span><span id="page-count">PAGE 01</span></div>
+          </article>
+          <section class="transcript-card" id="transcript-card">
+            <button type="button" class="transcript-toggle" id="transcript-toggle" aria-expanded="false">
+              <span><span class="transcript-icon" aria-hidden="true">≋</span><span><strong>Follow the narration</strong><small>Open the prepared narration script</small></span></span>
+              <span class="transcript-chevron" aria-hidden="true">⌄</span>
+            </button>
+            <div class="transcript-body" id="transcript-body" hidden></div>
+          </section>
+        </div>
+        <aside class="lesson-aside" aria-label="Lesson details">
+          <div class="aside-card chapter-card">
+            <p class="eyebrow">A LITTLE CONTEXT</p>
+            <h3 id="aside-title">Lines &amp; Angles</h3>
+            <p id="aside-copy">A sample chapter demonstrating how the pipeline can carry structure from a scanned page into a lesson.</p>
+            <div class="aside-illustration" aria-hidden="true">
+              <span class="angle-line angle-line-a"></span><span class="angle-line angle-line-b"></span><span class="angle-arc"></span><span class="angle-dot"></span>
+              <span class="angle-label angle-label-a">A</span><span class="angle-label angle-label-b">B</span><span class="angle-label angle-label-c">C</span>
+            </div>
+            <div class="aside-pills"><span>Textbook chapter</span><span>Mathematics</span></div>
+          </div>
+          <div class="aside-card quality-card">
+            <div class="quality-heading"><span class="quality-icon" aria-hidden="true">✳</span><div><p class="eyebrow">QUALITY CHECKS</p><h3>Built to be checked.</h3></div></div>
+            <p>Every stage leaves evidence: uncertain text, structure checks, retries, and audio verification are recorded in the run report.</p>
+            <button type="button" class="text-link" data-view-link="report">Explore this run’s report <span aria-hidden="true">→</span></button>
+          </div>
+          <div class="aside-footnote"><span aria-hidden="true">✦</span><p>Designed for learning across scripts, without losing the shape of the lesson.</p></div>
+        </aside>
+      </section>
+
+      <section class="secondary-view" id="view-workflow" data-view-panel="workflow" hidden>
+        <div class="secondary-header"><p class="eyebrow"><span class="eyebrow-line"></span> THE JOURNEY OF A CHAPTER</p><h2>Careful at every step.<br><em>Honest about the uncertain.</em></h2><p>Deterministic checks lead the way. Bodhan models handle OCR, translation and speech. An optional LLM is limited to guarded decisions—it does not write Indian-language text.</p></div>
+        <div class="workflow-grid" id="workflow-grid"></div>
+        <div class="guardrail-banner"><span class="guardrail-mark" aria-hidden="true">✓</span><div><strong>Uncertainty is part of the output.</strong><p>Doubtful OCR, failed checks, retries and degraded audio are recorded rather than presented as successful results.</p></div><button type="button" class="text-link" data-view-link="report">See the run report <span aria-hidden="true">→</span></button></div>
+      </section>
+
+      <section class="secondary-view" id="view-report" data-view-panel="report" hidden>
+        <div class="secondary-header report-header"><p class="eyebrow"><span class="eyebrow-line"></span> THE EVIDENCE, NOT JUST THE STORY</p><h2>A report you can <em>look through.</em></h2><p>Metrics and status are read from this run’s <code>report.json</code>. Simulated example values are clearly identified and are not live service measurements.</p></div>
+        <div class="report-summary" id="report-summary"></div>
+        <div class="report-table-wrap"><div class="report-table-heading"><div><p class="eyebrow">LANGUAGE CHECKS</p><h3>What each version says</h3></div><span id="report-status" class="report-status">—</span></div><div class="table-scroll"><table class="report-table"><thead><tr><th>Language</th><th>Status</th><th>Structure</th><th>Mean CER</th><th>Worst CER</th><th>Sections</th><th>Skipped</th><th>Loudness</th></tr></thead><tbody id="report-languages"></tbody></table></div></div>
+        <div class="report-extra-grid">
+          <section class="report-table-wrap">
+            <div class="report-table-heading"><div><p class="eyebrow">MODEL USAGE</p><h3>Calls and estimated spend</h3></div></div>
+            <div class="table-scroll"><table class="report-table"><thead><tr><th>Stage</th><th>Calls</th><th>Retries</th><th>Failures</th><th>Latency</th><th>Estimated INR</th></tr></thead><tbody id="report-usage"></tbody></table></div>
+          </section>
+          <section class="report-table-wrap">
+            <div class="report-table-heading"><div><p class="eyebrow">PIPELINE TIMINGS</p><h3>Stage by stage</h3></div></div>
+            <div class="table-scroll"><table class="report-table"><thead><tr><th>Stage</th><th>Seconds</th></tr></thead><tbody id="report-timings"></tbody></table></div>
+          </section>
+        </div>
+        <div class="report-note" id="report-note"></div>
+        <div class="report-details"><button class="text-link" id="download-report" type="button">Download this report.json <span aria-hidden="true">↓</span></button><span>Importing a folder or opening the sample does not transmit files.</span></div>
+      </section>
+
+      <div class="app-error" id="app-error" role="alert" hidden></div>
+    </main>
+    <footer class="site-footer"><a class="brand footer-brand" href="#"><span class="brand-mark" aria-hidden="true">b</span><span class="brand-copy"><strong>bodhan</strong><small>narrated lessons</small></span></a><span>Keep the lesson. Keep the evidence.</span><span>Open-source · Runs in your browser</span></footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

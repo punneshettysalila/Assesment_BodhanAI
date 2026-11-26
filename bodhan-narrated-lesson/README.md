@@ -6,6 +6,28 @@
 
 ---
 
+## Interactive web reader
+
+The repository also includes a static, browser-based reader for exploring a completed lesson run. It has a sample chapter with language switching, source/translation views, narration audio and scripts, a searchable section map, and the pipeline quality report. You can also open a pipeline output folder locally; files are read in your browser and are not uploaded.
+
+The included sample is produced by simulated models. Its audio files are 300 Hz test tones, not speech, so playback is disabled in the web reader. Translations and metrics are illustrative only—not real Bodhan results. The reader makes no Bodhan or other model calls and needs no API keys.
+
+```bash
+python scripts/build_web.py
+python -m http.server 8000 --directory dist
+```
+
+Run these commands from the repository root (the directory containing `render.yaml`), then open `http://localhost:8000`.
+
+### Deploy the reader
+
+- **GitHub Pages:** push to `main` or `master`, then set the repository’s Pages source to **GitHub Actions**. The workflow at `.github/workflows/deploy-pages.yml` builds and publishes the static reader.
+- **Render:** create a Blueprint instance from `render.yaml`; it builds the static site without installing the model pipeline dependencies.
+
+The reader is separate from the Python processing CLI; deploying it does not run OCR, translation, speech synthesis, or transcription.
+
+---
+
 ## Table of contents
 
 1. [Executive summary](#1-executive-summary)
